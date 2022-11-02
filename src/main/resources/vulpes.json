@@ -1,0 +1,12 @@
+{
+	"id": "vulpes_example_mod",
+	"name": "Vulpes Example Mod",
+	"version": "1.0.0",
+	"authors": "The Vulpes Team, founded by TalonFox",
+	"description": "A template mod meant to serve as the foundation for developers making Vulpes Mods.",
+	"mixin": "example_mod.mixins.json",
+	"entrypoints": {
+		"vulpes:common": "com.example.CommonEntrypoint",
+		"vulpes:client": "com.example.client.ClientEntrypoint"
+	}
+}

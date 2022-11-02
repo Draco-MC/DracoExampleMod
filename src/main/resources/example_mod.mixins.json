@@ -1,0 +1,5 @@
+{
+  "minVersion": "0.8",
+  "compatibilityLevel": "JAVA_8",
+  "package": "com.example.mixins"
+}

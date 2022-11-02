@@ -1,0 +1,36 @@
+buildscript {
+    repositories {
+        maven {
+            url "https://repo.spongepowered.org/repository/maven-public/"
+        }
+    }
+    dependencies {
+        classpath "org.spongepowered:vanillagradle:0.2.1-SNAPSHOT"
+    }
+}
+
+plugins {
+    id 'java'
+}
+
+apply plugin: "org.spongepowered.gradle.vanilla"
+
+group = 'com.example'
+version = "1.0.0"
+
+repositories {
+    mavenCentral()
+    maven { url = "https://repo.spongepowered.org/maven/" }
+    maven { url = "https://maven.minecraftforge.net/" }
+    maven { url = "https://maven.enaium.cn" }
+    maven { url = 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation 'com.github.VulpesMC:VulpesLoader:main-SNAPSHOT'
+    implementation 'com.github.VulpesMC:VulpesStandardLibrary:main-SNAPSHOT'
+}
+
+minecraft {
+    latestRelease()
+}
