@@ -27,8 +27,8 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.VulpesMC:VulpesLoader:main-SNAPSHOT'
     implementation 'com.github.VulpesMC:VulpesStandardLibrary:main-SNAPSHOT'
+    implementation 'com.github.VulpesMC:VulpesLoader:main-SNAPSHOT'
 }
 
 minecraft {
