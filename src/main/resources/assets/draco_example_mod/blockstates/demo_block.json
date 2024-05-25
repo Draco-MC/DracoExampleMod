@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "draco_example_mod:block/demo_block"
+    }
+  }
+}

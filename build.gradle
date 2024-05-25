@@ -27,10 +27,19 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.VulpesMC:VulpesStandardLibrary:main-SNAPSHOT'
-    implementation 'com.github.VulpesMC:VulpesLoader:main-SNAPSHOT'
+    implementation 'com.github.Draco-MC:DracoStandardLibrary:1.20.6-SNAPSHOT'
+    implementation 'com.github.Draco-MC:DracoLoader:main-SNAPSHOT'
 }
 
 minecraft {
-    latestRelease()
+    version("1.20.6")
+    runs {
+        server() {
+            mainClass("net.minecraft.launchwrapper.Launch")
+        }
+        client() {
+            mainClass("net.minecraft.launchwrapper.Launch")
+            args("--tweakClass", "sh.talonfloof.dracoloader.bootstrap.MinecraftClientBootstrap", "--username", "Dev")
+        }
+    }
 }

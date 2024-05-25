@@ -1,0 +1,10 @@
+{
+	"id": "draco_example_mod",
+	"name": "Draco Example Mod",
+	"version": "1.0.0",
+	"authors": "The DracoMC Team",
+	"description": "A template mod meant to serve as the foundation for developers making Draco Mods.",
+	"listeners": [
+		"com.example.DracoExampleMod"
+	]
+}
